@@ -1,0 +1,20 @@
+for as/asm   :   as name.s/asm -o name_you_like --32
+
+    OR
+
+nasm -f elf name_you_like.asm -o name_you_like.o
+
+for linker   :   ld -m elf_i386 -s -o name_you_like name_you_like.o
+
+objdump -d name_liker_gave
+
+
+
+COMPILATION
+
+gcc -g test.c -o test
+
+execstack -s test
+
+./test
+
